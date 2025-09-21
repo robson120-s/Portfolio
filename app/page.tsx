@@ -5,8 +5,8 @@ import ProjectCard from "./components/ProjectCard";
 export default function Home() {
   return (
     <main>
-      <h1>My Portfolio</h1>
-      <Link href="/contact">Contact</Link><br />
+      <div>My Portfolio</div>
+      <Link href="/contact">Contact Me</Link><br />
       <ProjectCard />
       
 
