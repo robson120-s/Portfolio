@@ -1,12 +1,13 @@
-import { div } from "framer-motion/client";
 import React from "react";
+import Quote from "./quote";
 
 const Progress = () => {
   return (
     <div className="bg-amber-100">
-      <div className="m-10 p-3 flex gap-6 ">
-        <div className="m-10 p-3 flex gap-6 flex-auto bg-blue-100">
-          <div className=" border border-2xl border-emerald-800 rounded-2xl p-9 flex-auto">
+      <div className="m-10 p-3 flex gap-8 justify-between">
+        {/* Skill Progress Bar */}
+        <div className="p-6 flex-1 bg-blue-100 rounded-4xl shadow-lg shadow-green-700">
+          <div className="border border-2xl border-emerald-800 rounded-2xl p-9">
             <h2 className="text-2xl font-bold text-emerald-400">
               Skill Progress
             </h2>
@@ -18,6 +19,7 @@ const Progress = () => {
                 style={{ width: "86%" }}
               ></div>
             </div>
+
             <h3 className="text-lg font-semibold mt-3">CSS || Tailwind</h3>
             <div className="w-full bg-gray-200 rounded-full h-2 dark:bg-gray-700">
               <div
@@ -50,14 +52,11 @@ const Progress = () => {
               ></div>
             </div>
           </div>
-
-          <div></div>
         </div>
 
-        <div className="border border-2xl border-amber-600 rounded-2xl p-9 flex-auto">
-          <h2 className="text-2xl font-bold text-emerald-400 m-10 border-amber-600 border-3xl pb-5">
-            Quote of Programming
-          </h2>
+        {/* Quote Section */}
+        <div className="p-6 flex-1 bg-blue-100 rounded-4xl shadow-lg shadow-red-700">
+          <Quote />
         </div>
       </div>
     </div>

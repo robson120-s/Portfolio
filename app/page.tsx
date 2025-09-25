@@ -2,14 +2,15 @@ import Image from "next/image";
 import Link from "next/link";
 import Header from "./components/header";
 import Progress from "./components/progress";
-// import ProjectCard from "./components/ProjectCard";
+import ProjectCards from "./components/projectcards";
+
 
 export default function Home() {
   return (
     // from-rose-500 via-zinc-500 to-red-500
-    <div className="min-h-screen bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100">
+    <div className=" bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100">
       <Header />
-      <div className=" inline-flex py-2 pb-3 bg-amber-200 max-w-screen">
+      <div className=" inline-flex py-2 pb-3 bg-amber-200 ">
         <div className="relative w-78 h-90 mx-20 mt-4 ">
           <Image
             src="/man.jpg"
@@ -46,7 +47,7 @@ export default function Home() {
       </div>
       <Progress />
       <br />
-      {/* <ProjectCard /> */}
+      <ProjectCards />
     </div>
   );
 }
